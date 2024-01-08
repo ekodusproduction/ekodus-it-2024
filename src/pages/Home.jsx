@@ -5,6 +5,9 @@ import styles from './Home.module.css'
 import Button from '../components/Button'
 import AOS from "aos";
 import "aos/dist/aos.css";
+// import Navbar1 from '../components/Navbar1'
+import Navbar1 from '../components/Navbar1'
+import { ImageSlider } from '../components/ImageSlider'
 
 
 const Home = () => {
@@ -22,7 +25,8 @@ const Home = () => {
   };
   return (
     <>
-      <Header/>
+       <Navbar1/>
+       <ImageSlider/>
       <div className='mt-20 flex justify-center  gap-24 overflow-hidden'>
           <div className="tab flex flex-col items-start gap-2" data-aos="fade-right" data-aos-once={true}>
                 <button
