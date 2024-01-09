@@ -14,8 +14,8 @@ export const ImageSlider = () => {
     padding: '7rem',
     drag: "free",
     snap: true,
-    autoplay   : true,
-    interval: 5000,
+    // autoplay   : true,
+    // interval: 5000,
     pauseOnHover: true,
   };
 
@@ -45,14 +45,15 @@ export const ImageSlider = () => {
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               <button type="button">Know More</button>
             </div>
+            <div className="image-container">
             <img
               src="https://s7ap1.scene7.com/is/image/TCSCOMprod/the-future-operations:Large?wid=1260&hei=768&dpr=off"
               alt="Image 1"
             />
+            </div>
             <div className="progress-bar"></div>
           </div>
         </SplideSlide>
-      
         <SplideSlide>
           <div className="content">
             <div className="overlay"></div>
@@ -61,10 +62,12 @@ export const ImageSlider = () => {
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               <button type="button">Know More</button>
             </div>
+            <div className="image-container">
             <img
               src="https://s7ap1.scene7.com/is/image/TCSCOMprod/collaboration-new:Large?wid=1260&hei=768&dpr=off"
               alt="Image 2"
             />
+            </div>
             <div className="progress-bar"></div>
           </div>
         </SplideSlide>
@@ -76,15 +79,16 @@ export const ImageSlider = () => {
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               <button type="button">Know More</button>
             </div>
+            <div className="image-container">
             <img
               src="https://s7ap1.scene7.com/is/image/TCSCOMprod/banking-beyond-boundaries-new:Large?wid=1260&hei=768&dpr=off"
               alt="Image 2"
             />
+            </div>
             <div className="progress-bar"></div>
           </div>
         </SplideSlide>
       </Splide>
-
       {/* <button class="splide__toggle" type="button" onClick={togglePlayPause}>
 	         <span class="splide__toggle__play">Play</span>
 	        <span class="splide__toggle__pause">Pause</span>

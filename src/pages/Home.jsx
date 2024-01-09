@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 // import Navbar1 from '../components/Navbar1'
 import Navbar1 from '../components/Navbar1'
 import { ImageSlider } from '../components/ImageSlider'
+import "../pages/techstack.css";
 
 
 const Home = () => {
@@ -95,7 +96,7 @@ const Home = () => {
                     <p className='text-[10px] font-bold text-[rgba(0,0,0,0.8)]'>PRODUCT DESIGN</p>
                   </div>
                   <div className='border rounded-lg p-[3px]'>
-                    <p className='text-[10px] font-bold text-[rgba(0,0,0,0.8)]'>RAPID PROTOTPING</p>
+                    <p className='text-[10px] font-bold text-[rgba(0,0,0,0.8)]'>RAPID PROTOTYPING</p>
                   </div>
               </div>
               <div className='mx-4'>
@@ -135,7 +136,6 @@ const Home = () => {
               <p className='font-semibold text-sm w-[25ch]'>we have established a strong
               foundation from which we
               deliver our promise.</p>
-
               <h3 className='mt-4 font-bold text-xl'>24/7 Consultation & Support</h3>
               <p className='font-semibold text-sm w-[30ch]'>Solve complex problem into better customer experiences</p>
               <Button title={'Book your Consultation'}/>
@@ -144,7 +144,6 @@ const Home = () => {
               <img src="/assets/Home/image2.png" className={`w-[380px] ${styles.robot}`} alt="" />
             </div>
         </div>
-
 
         <div className={` ${styles.whychooseus} pt-16 overflow-hidden`}>
             <h2 className='text-center text-white font-semibold text-4xl mb-16' data-aos="fade-right" data-aos-once={true} data-aos-delay={0}>5 Reasons to Choose Us</h2>
@@ -277,6 +276,26 @@ const Home = () => {
               <p className='text-center text-lg font-bold mt-4'>EDUCATION</p>
             </div>
           </div>
+        </div>
+
+        <div className='tech-container'>
+          <div className='tech-header'>
+          <h1>TECHNOLOGY STACK</h1>
+          </div>
+          <hr class="solid"></hr>
+          <div className='tech-body'>
+            <div className='tech-content'>
+              <li>Web Platform</li>
+              <li>Cloud and DevOps</li>
+              <li>Database</li>
+              <li>Mobile Apps</li>
+            </div>
+            <div className='tech-stack'>
+              <h1>Front End</h1>
+              <h1>Back End</h1>
+            </div>
+          </div>
+
         </div>
    </>
    

@@ -1,0 +1,31 @@
+.tech-container{
+    display: flex;
+    flex-direction: column;
+}
+.tech-body{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.1rem;
+}
+.tech-content{
+    width: 35%;
+    padding-left: 8.2rem;
+
+}
+hr.solid {
+    
+    width: 70%;
+    border-top: 3px solid #bbb;
+  }
+.tech-header{
+    padding-left: 8.2rem;
+    padding-top: 2.1rem;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+
+
+.tech-stack{
+    width: 65%;
+}

@@ -1,11 +1,20 @@
 .content img{
   /* max-width: 100%; */
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   object-fit: cover;
-  transition: width 2s, height 2s, transform 2s;
+  transition: width 0.8s, height 0.8s, transform 0.8s;
 }
-
+.splide__slide.is-active .image-container{
+  overflow: hidden;
+}
+.splide__slide.is-active .image-container:hover{
+  overflow: visible;
+}
+.splide__slide.is-active .image-container img{
+  transition: all 5s;
+  transform: scale(1.1);
+}
 .splide__slide.is-active .content:hover img{
   z-index: 5;
   transform: scale(1.1);
@@ -15,8 +24,8 @@
 }
 .content .content-header h1{
   position: absolute;
-  top: 36px;
-  font-size: 63px;
+  top: 2px;
+  font-size: 3.4rem;
   left: 8px;
   z-index: 1;
   color: white;
@@ -24,23 +33,23 @@
 
 .content .content-header p{
   position: relative;
-  top: 246px;
+  top: 183px;
   left: 8px;
-  font-size: 1.8rem;
+  font-size: 1.67rem;
   color: white;
   z-index: -1;
 }
 
 .content .content-header button{
   position: relative;
-  top: 306px;
+  top: 246px;
     left: 8px;
     color: white;
-    padding: 10px 34px;
+    padding: 9px 32px;
     border-radius: 70px;
-    font-size: 1.3rem;
+    font-size: 1.18rem;
   z-index: -1;
-  background: linear-gradient(45deg, #df0707, #d57d7d);
+  background: linear-gradient(102.57deg,#d0121e,#e41175 100%,#e41175 0);
 }
 
 .splide__slide.is-active .content:hover .content-header h1{
@@ -86,16 +95,30 @@
     left: 0;
     margin-top: 59px;
     width: 100%;
-  height: 90vh;
+    height: 80vh;
     background-color: rgba(0, 0, 0, 0.356);
     z-index: 1;
-    transition: width 2s, height 0.1s, transform 2s;
+    transition: width 0.8s, height 0.8s, transform 0.8s;
     }
     
-    .splide__slide.is-active .content .overlay{
-     
-  transform: scale(1.1);
-    } 
+  .splide__slide.is-active .content:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.801);
+    transform: scale(1.1);
+   } 
+
+    .splide__arrow svg  {
+      fill: #fff !important;
+      height: 3.2em !important;
+      width: 3.2em !important;
+  }
+
+  
+
+  /* .splide__arrow{
+    opacity: 1;
+    width: 25rem;
+    height: 25rem;
+  } */
 /*
   .splide__slide.is-active .content img{
     z-index: 5;
